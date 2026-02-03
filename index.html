@@ -4,42 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>哈基米：战火中的流浪</title>
-    <!-- 加载 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              serif: ['"Noto Serif SC"', 'serif'],
-              mono: ['"Noto Sans Mono"', 'monospace'],
-            },
-            animation: { 'fade-in': 'fadeIn 0.5s ease-out' },
-            keyframes: {
-              fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } }
-            }
-          }
-        }
-      }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      body {
-        background-color: #000;
-        margin: 0;
-        overscroll-behavior: none;
-      }
-      ::-webkit-scrollbar { width: 4px; }
-      ::-webkit-scrollbar-track { background: #1c1917; }
-      ::-webkit-scrollbar-thumb { background: #44403c; border-radius: 2px; }
+      body { background-color: #000; margin: 0; }
     </style>
   </head>
   <body>
-    <!-- React 渲染的容器 -->
     <div id="root"></div>
-
-    <!-- 核心修复：加上下面这行代码，点亮你的游戏！ -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- 关键点：这里直接写 index.tsx，不要加斜杠，不要加点 -->
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>
- 
