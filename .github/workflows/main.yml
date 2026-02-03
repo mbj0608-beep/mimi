@@ -2,7 +2,8 @@ name: Deploy Vite to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # 如果你的分支叫 master，请把这里改成 master
+    branches: ["main"]
+  workflow_dispatch: # <--- 这是手动开关，加上这行就能手动点运行了
 
 permissions:
   contents: read
