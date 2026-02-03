@@ -6,12 +6,15 @@
     <title>哈基米：战火中的流浪</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      body { background-color: #000; margin: 0; }
+      body { background-color: #000; margin: 0; color: white; }
     </style>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- 关键点：这里直接写 index.tsx，不要加斜杠，不要加点 -->
-    <script type="module" src="index.tsx"></script>
+    <div id="root">
+      <!-- 这是一个调试文字，如果你看到它，说明 React 还没启动 -->
+      <div style="text-align:center; padding-top:50px;">游戏正在初始化，请稍候...</div>
+    </div>
+    <!-- 核心修复：这里一定要写成 ./index.tsx -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
