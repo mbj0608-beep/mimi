@@ -21,7 +21,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # 这里删掉了 cache 行，不再报错
 
       - name: Install dependencies
         run: npm install
